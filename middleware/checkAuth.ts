@@ -12,7 +12,7 @@ export const ensureAuthenticated = (req: Request, res: Response, next: any) => {
 /*
 FIX ME (types) 😭
 */
-export const forwardAuthenticated = (req: any, res: any, next: any) => {
+export const forwardAuthenticated = (req: Request, res: any, next: any) => {
     if (!req.isAuthenticated()) {
       return next();
     }
